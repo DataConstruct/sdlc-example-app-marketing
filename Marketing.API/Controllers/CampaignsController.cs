@@ -19,7 +19,6 @@ namespace Microsoft.eShopOnContainers.Services.Marketing.API.Controllers
     using System.Net;
 
     [Route("api/v1/[controller]")]
-    [Authorize]
     [ApiController]
     public class CampaignsController : ControllerBase
     {

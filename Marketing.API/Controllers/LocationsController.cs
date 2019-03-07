@@ -10,7 +10,6 @@ namespace Microsoft.eShopOnContainers.Services.Marketing.API.Controllers
     using System.Net;
     using System.Threading.Tasks;
 
-    [Authorize]
     [ApiController]
     public class LocationsController : ControllerBase
     {
