@@ -219,6 +219,7 @@
 
         private void RegisterAppInsights(IServiceCollection services)
         {
+            services.AddSingleton<ITelemetryInitializer>(new CloudRoleNameInitializer("marketing"));
             services.AddApplicationInsightsTelemetry(Configuration);
             var orchestratorType = Configuration.GetValue<string>("OrchestratorType");
 
